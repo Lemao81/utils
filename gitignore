@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.env
+.env*.local
+.idea/
+.vscode/
+bin/
+obj/
+*.DotSettings.user
+/ios
+/android
