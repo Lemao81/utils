@@ -1,0 +1,21 @@
+-- general --
+pnpm dlx skills add https://gitlab.com/gitlab-org/ai/skills -s commit-messages -a claude-code --copy
+
+-- mattpocock --
+pnpm dlx skills@latest add mattpocock/skills -a claude-code --copy
+
+install: 
+ask-matt
+domain-modeling
+grill-with-docs
+grilling
+prototype
+research
+setup-matt-pocock-skills
+wayfinder
+
+do:
+/setup-matt-pockock-skills
+/grill-with-docs <project description>
+/to-spec
+/to-tickets
