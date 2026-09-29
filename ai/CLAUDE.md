@@ -32,6 +32,8 @@ Most of this file is shared across projects. Apart from the sections that specif
   - Always use single quotes, matching the Biome config's `quoteStyle`.
   - Import a directory's `index` module by the directory alone — `<dir>`, never `<dir>/index`.
   - Insert an empty line after a multi-line block statement (`if`, `for`, `while`, `do`/`while`, `switch`, `try`/`catch`), unless it is the last statement in its scope. Never insert one before a continuation keyword (`} else {`, `} catch {`, `} finally {`, `} while (…);`).
+- Markdown:
+    - Never hard-wrap text. Write each paragraph, bullet point or table cell as one line, however long, and leave wrapping to the viewer. Line breaks belong only between separate elements (paragraphs, list items, headings, code blocks).
 - Cypress:
   - Select elements only via `cy.get('[data-cy=...]')`; add a `data-cy` attribute to every element a test targets.
   - Keep `it()` titles to a few words naming the main thing, not action→result sentences.
