@@ -33,6 +33,8 @@ Most of this file is shared across projects. Apart from the sections that specif
   - Always use single quotes, matching the Biome config's `quoteStyle`.
   - Import a directory's `index` module by the directory alone — `<dir>`, never `<dir>/index`.
   - Insert an empty line after a multi-line block statement (`if`, `for`, `while`, `do`/`while`, `switch`, `try`/`catch`), unless it is the last statement in its scope. Never insert one before a continuation keyword (`} else {`, `} catch {`, `} finally {`, `} while (…);`).
+- package.json:
+    - Prefix script names with a short tag for the tool it runs, followed by a colon (`bm:check`, `db:migrate`, `docker:up`). Scripts for the core build toolchain and for tests keep plain names (`start`, `typecheck`, `test:e2e`).
 - Markdown:
     - Never hard-wrap text. Write each paragraph, bullet point or table cell as one line, however long, and leave wrapping to the viewer. Line breaks belong only between separate elements (paragraphs, list items, headings, code blocks).
 - Cypress:
