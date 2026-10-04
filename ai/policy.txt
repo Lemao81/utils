@@ -1,0 +1,2 @@
+sbx policy allow network learn.microsoft.com:443
+sbx policy allow network biomejs.dev:443
