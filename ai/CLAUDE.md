@@ -8,7 +8,7 @@ This file is shared across projects. Apart from current project descriptions, an
 
 ## Agent Instructions
 
-- `node_modules` is installed on the Windows host and shared with this sandbox; that install also fetches the Linux native binaries. Never run `pnpm`, `npx` or any install command here; call tools via `node_modules/.bin/<tool>`. To change dependencies, edit `package.json` and tell the user to run the install.
+- `node_modules` is installed on the Windows host and shared with this sandbox; that install also fetches the Linux native binaries. Never run `pnpm`, `npx`, `electron`, `electron-forge` or any install command here; call tools via `node_modules/.bin/<tool>`. To change dependencies, edit `package.json` and tell the user to run the install.
 - Never execute `git commit` on your own without explicit instruction. After explicit instruction, commit directly to main — this is a solo project and does not use feature branches.
 - After executing a commit, stop. Never start the next task or planned commit automatically — wait for the user to say so.
 - After creating a file that belongs in the repository, run `git add` on it right away so it is tracked rather than left untracked.
