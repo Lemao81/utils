@@ -1,6 +1,6 @@
 ## General Notes
 
-Most of this file is shared across projects. Apart from the sections that specifically describe the current project, any technology it names (languages, frameworks, libraries, test tools, linters) only defines how to work *if* that technology is used; its mention is not a sign that this project uses it or should. When planning or choosing technologies for a feature, reason from the project's actual code, its requirements and the decisions made with the user, never from what this file happens to mention.
+This file is shared across projects. Apart from the sections describing the current project, any technology it names only defines how to work *if* that technology is used; its mention is not a sign that this project uses it or should. When planning for a feature, reason from the project's actual code, its requirements and the decisions made with the user, never from what this file happens to mention.
 
 ## Agent Instructions
 
