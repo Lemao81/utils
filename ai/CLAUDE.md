@@ -63,7 +63,7 @@ Issues, specs and plans live as local markdown files under `.scratch/<feature>/`
 
 ### Commits
 
-The repo includes a `commit-messages` skill (`.claude/skills/commit-messages/`, tracked in `skills-lock.json`). Use it whenever you commit. It enforces imperative, capitalized subjects, 72-character wrapping, a body that explains *why*, and atomic commits.
+The repo includes a `commit-messages` skill (`.claude/skills/commit-messages/`, tracked in `skills-lock.json`). Use it whenever you commit.
 
 ## Claude Code Status Line
 
