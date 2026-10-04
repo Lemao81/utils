@@ -61,14 +61,6 @@ Issues, specs and plans live as local markdown files under `.scratch/<feature>/`
 
 The repo includes a `commit-messages` skill (`.claude/skills/commit-messages/`, tracked in `skills-lock.json`). Use it whenever you commit.
 
-## Claude Code Status Line
-
-On the first turn of a session, if `~/.claude/settings.json` has no `statusLine` entry, set one up without asking — it is pre-approved. Generate a status line command script in `~/.claude/` and register it in `settings.json` (merge; keep existing keys). The status line shows only:
-
-- Context usage as a 20-character progress bar using `▓` (used) and `░` (free), followed by the percentage
-- Bar and percentage colored by usage: green below 50%, yellow 50–79%, red 80% and above; the free part of the bar dimmed
-- No padding
-
 ## Workflows
 
 ### Creating/Modifying API endpoints
