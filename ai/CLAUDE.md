@@ -56,6 +56,7 @@ Issues, specs and plans live as local markdown files under `.scratch/<feature>/`
 - `plan.md` has one heading per issue, linking its file, with its steps below as checkboxes (`- [ ] 1.1 Step title`) in execution order. 📦 marks a step that edits `package.json`; the user runs `pnpm install` before reviewing it.
 - Decisions that must wait until work starts go under `## Open decisions (ask the user before starting)`.
 - "Move on with the plan": take the next unticked step. At an issue's first step, ask its open decisions first and record the answers in the issue. Do only that step, tick it and stop without committing; the step and its tick are committed together on instruction. Set the issue's `Status:` to `resolved` when its last step is ticked.
+- After committing a plan step, end with a code block of `🟢 Finished: <step>` and `🟡 Next:     <next unticked step, or none>`, steps as number and title, values aligned.
 
 ### Commits
 
