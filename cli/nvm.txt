@@ -1,0 +1,3 @@
+nvm ls
+nvm install x.x.x
+nvm use x.x.x
