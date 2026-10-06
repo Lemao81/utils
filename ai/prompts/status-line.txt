@@ -1,4 +1,10 @@
-If ~/.claude/settings.json has no statusLine entry, set one up. Generate a status line command script in ~/.claude/ and register it in settings.json (merge; keep existing keys). The status line shows only:
-- Context usage as a 20-character progress bar using `▓` (used) and `░` (free), followed by the percentage
-- Bar and percentage colored by usage: green below 50%, yellow 50–79%, red 80% and above; the free part of the bar dimmed
+If ~/.claude/settings.json has no statusLine entry, set one up. Generate a status line command script in ~/.claude/ and register it in settings.json (merge; keep existing keys):
+Single-line status line, e.g. `Opus 5.5 (high) default │ ▓▓░░░░░░░░░░░░░░░░░░12% of 1M │ 5h: 8% │ 7d: 1% │ ImageCreator`. Colors are 256-color codes unless noted.
+- Separator ` │ ` (box-drawing `│`) in light grey 250
+- Model display name and effort in parentheses, pale gold 223; then output style in default color
+- Context bar: 20 chars, `▓` used, `░` free (dimmed), percentage directly after; standard ANSI green <50%, yellow 50–79%, red ≥80%
+- `of <size>` for the context window size (`1M`, `1.5M`, `200k`), grey 248
+- `5h: <n>%` and `7d: <n>%` rate limits, percentages only, colored by the same thresholds in 114 / 229 / 210
+- Current directory name (last path segment), light grey 253
+- Omit any segment without data, including its separator
 - No padding
