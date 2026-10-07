@@ -10,6 +10,7 @@ This file is shared across projects. Apart from current project descriptions, an
 
 - `node_modules` is installed on the Windows host and shared with this sandbox; that install also fetches the Linux native binaries. Never run `pnpm`, `npx`, `electron`, `electron-forge` or any install command here; call tools via `node_modules/.bin/<tool>`. To change dependencies, edit `package.json` and tell the user to run the install.
 - If the project uses Biome: whenever you have edited files it checks, run `biome check --write` before handing back to the user, and fix whatever it still reports in the code; never silence a finding by suppression or by changing `biome.json` without asking.
+- If the project uses shadcn/ui: never write component code yourself; to add or update components, give the user the `pnpm shadcn add <components>` command (with `--overwrite` for updates, naming any local edits it discards, since formatting makes `--diff` useless) and wait until they have run it. Then format the files and stage them by explicit path. Read-only CLI calls (`docs`, `search`, `view`, `--dry-run`) are fine.
 - Never execute `git commit` on your own without explicit instruction. After explicit instruction, commit directly to main — this is a solo project and does not use feature branches.
 - After executing a commit, stop. Never start the next task or planned commit automatically — wait for the user to say so.
 - After creating a file that belongs in the repository, run `git add` on it right away so it is tracked rather than left untracked.
