@@ -4,7 +4,7 @@ Single-line status line, e.g. `Opus 5.5 (high) default │ ▓▓░░░░░
 - Model display name and effort in parentheses, pale gold 223; then output style in default color
 - Context bar: 20 chars, `▓` used, `░` free (dimmed), percentage directly after; standard ANSI green <50%, yellow 50–79%, red ≥80%
 - `of <size>` for the context window size (`1M`, `1.5M`, `200k`), grey 248
-- `5h: <n>%` and `7d: <n>%` rate limits, percentages only, colored by the same thresholds in 114 / 229 / 210
+- `5h: <n>%` and `7d: <n>%` rate limits, percentages only, colored by the same thresholds in 114 / 229 / 210; until a window's usage is known (Claude Code only sends it after the first API response of a session), show a dimmed `–` in place of `<n>%`, e.g. `5h: –`
 - Current directory name (last path segment), light grey 253
-- Omit any segment without data, including its separator
+- Omit any segment without data, including its separator, except the rate limits, which show the placeholder instead
 - No padding
