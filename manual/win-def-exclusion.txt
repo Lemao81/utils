@@ -1,0 +1,6 @@
+- Click the Windows Start button.
+- Enter Windows Security.
+- Click Virus and threat protection.
+- Click Manage settings under Virus & threat protection settings.
+- Scroll down if necessary, and then click “Add or remove exclusions”.
+- For each folder shown in the notification and listed in "Folders and processes for an antivirus exception list," click the + button, select “Folder” from the menu, and select the folder.
