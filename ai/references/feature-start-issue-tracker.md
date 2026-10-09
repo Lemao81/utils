@@ -1,6 +1,6 @@
 # Starting a feature
 
-1. `/grill-with-docs <idea>`: answer the numbered question rounds until every decision is settled. Resolved terms go into `CONTEXT.md`, decisions that are hard to reverse into `docs/adr/`.
+1. `/grill-with-docs <idea>`: answer the numbered question rounds until every decision is settled. Resolved terms go into `GLOSSARY.md`, decisions that are hard to reverse into `docs/adr/`.
 2. `/to-spec`: confirm the proposed test seams; the conversation becomes `.scratch/<feature>/spec.md`.
 3. `/to-tickets`: approve the tracer-bullet breakdown; it becomes one issue file per ticket with its blockers, and `plan.md` is written alongside (see below).
 4. "Move on with the plan" implements it step by step.
