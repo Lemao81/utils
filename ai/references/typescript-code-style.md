@@ -9,4 +9,4 @@
 - Use a `type` alias for React component props, never an `interface`.
 - Always use single quotes, matching the Biome config's `quoteStyle`.
 - Import a directory's `index` module by the directory alone — `<dir>`, never `<dir>/index`.
-- Insert an empty line after a multi-line block statement (`if`, `for`, `while`, `do`/`while`, `switch`, `try`/`catch`), unless it is the last statement in its scope. Never insert one before a continuation keyword (`} else {`, `} catch {`, `} finally {`, `} while (…)`).
+- Insert an empty line after any statement spanning multiple lines, unless it is the last statement in its scope. Never insert one before a continuation keyword (`} else {`, `} catch {`, `} finally {`, `} while (…)`).
