@@ -3,7 +3,7 @@ pnpm dlx skills add https://gitlab.com/gitlab-org/ai/skills -s commit-messages -
 
 ### Mattpocock
 #### All
-pnpm dlx skills@latest add mattpocock/skills -s ask-matt -s domain-modeling -s grill-with-docs -s grilling -s prototype -s research -s retro -s setup-matt-pocock-skills -s to-spec -s to-tickets -a claude-code --copy
+pnpm dlx skills@latest add mattpocock/skills -s ask-matt -s domain-modeling -s grill-with-docs -s grilling -s prototype -s research -s retro -s setup-matt-pocock-skills -s to-spec -s to-tickets -s writing-for-agents -a claude-code --copy
 
 #### Selection
 pnpm dlx skills@latest add mattpocock/skills -a claude-code --copy
@@ -18,6 +18,7 @@ retro
 setup-matt-pocock-skills  
 to-spec  
 to-tickets  
+writing-for-agents  
 
 #### Do
 /setup-matt-pockock-skills  
