@@ -23,7 +23,6 @@ This file is shared across projects. Apart from current project descriptions, an
   - Insert an empty line before `return`, unless it is the first statement in its block.
   - Always brace a control-flow body and put its statement on its own line — never `if (x) return`.
   - Never add comments, except tool-control directive comments when explicitly instructed — e.g. suppression/ignore/pragma comments for linters, formatters, type-checkers, or static analyzers.
-  - Preserve a file's existing line endings; write new files with CRLF.
 - C#:
   - Tests:
     - Structure tests with the Arrange-Act-Assert pattern, marking each section with an `// Arrange`, `// Act` or `// Assert` comment.
