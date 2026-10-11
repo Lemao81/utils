@@ -20,6 +20,7 @@ This file is shared across projects. Apart from current project descriptions, an
 - When asked to print your last response to answers (`print last response to answers`), append that response as Markdown to `ANSWERS.md` in the repo root. Start the entry with a line holding the current timestamp (`## YYYY-MM-DD HH:MM`).
 
 ## Code Style
+
 - General:
   - Never add comments, except tool-control directive comments when explicitly instructed — e.g. suppression/ignore/pragma comments for linters, formatters, type-checkers, or static analyzers.
 - package.json:
