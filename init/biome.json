@@ -28,14 +28,17 @@
     "rules": {
       "style": {
         "useBlockStatements": "error",
+        "useConsistentArrowReturn": { "level": "error", "options": { "style": "asNeeded" } },
         "useConsistentTypeDefinitions": { "level": "error", "options": { "style": "type" } },
+        "useFilenamingConvention": { "level": "error", "options": { "filenameCases": ["kebab-case"] } },
         "noRestrictedImports": {
           "level": "error",
           "options": { "patterns": [{ "group": ["**/index"], "message": "Import the directory." }] }
         }
       },
       "nursery": {
-        "useConsistentFunctionStyle": { "level": "error", "options": { "style": "declaration" } }
+        "useConsistentFunctionStyle": { "level": "error", "options": { "style": "declaration" } },
+        "useExplicitReturnType": { "level": "error", "options": { "allowExpressions": true } }
       }
     }
   },
@@ -46,6 +49,26 @@
         "rules": {
           "correctness": {
             "noEmptyPattern": "off"
+          }
+        }
+      }
+    },
+    {
+      "includes": ["src/components/**"],
+      "linter": {
+        "rules": {
+          "style": {
+            "useFilenamingConvention": { "level": "error", "options": { "filenameCases": ["PascalCase"] } }
+          }
+        }
+      }
+    },
+    {
+      "includes": ["modules/**"],
+      "linter": {
+        "rules": {
+          "style": {
+            "useFilenamingConvention": "off"
           }
         }
       }
