@@ -1,7 +1,8 @@
 ...
   "scripts": {
     "typecheck": "tsc --noEmit",
-    "bm:check": "biome check",
+    "bm:check:ci": "biome ci",
+    "bm:check:dev": "biome check",
     "bm:fix": "biome check --write",
   }
 ...
