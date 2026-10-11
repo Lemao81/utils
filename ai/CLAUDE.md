@@ -22,8 +22,6 @@ This file is shared across projects. Apart from current project descriptions, an
 
 ## Code Style
 - General:
-  - Insert an empty line before `return`, unless it is the first statement in its block.
-  - Always brace a control-flow body and put its statement on its own line — never `if (x) return`.
   - Never add comments, except tool-control directive comments when explicitly instructed — e.g. suppression/ignore/pragma comments for linters, formatters, type-checkers, or static analyzers.
 - C#:
   - Tests:
