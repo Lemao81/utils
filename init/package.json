@@ -1,5 +1,6 @@
 ...
   "scripts": {
+    "test": "vitest run",
     "typecheck": "tsc --noEmit",
     "bm:check:ci": "biome ci",
     "bm:check:dev": "biome check",
