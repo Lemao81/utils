@@ -1,7 +1,7 @@
-import stylistic from '@stylistic/eslint-plugin';
-import expo from 'eslint-plugin-expo';
-import { defineConfig, globalIgnores } from 'eslint/config';
-import tseslint from 'typescript-eslint';
+import stylistic from '@stylistic/eslint-plugin'
+import { defineConfig, globalIgnores } from 'eslint/config'
+import expo from 'eslint-plugin-expo'
+import tseslint from 'typescript-eslint'
 
 export default defineConfig([
   globalIgnores(['.expo/', 'android/', 'dist/', 'modules/*/android/']),
@@ -15,7 +15,12 @@ export default defineConfig([
         { blankLine: 'always', prev: '*', next: 'return' },
         {
           blankLine: 'always',
-          prev: ['multiline-const', 'multiline-let', 'multiline-expression', 'multiline-block-like'],
+          prev: [
+            'multiline-const',
+            'multiline-let',
+            'multiline-expression',
+            'multiline-block-like',
+          ],
           next: '*',
         },
       ],
@@ -25,4 +30,4 @@ export default defineConfig([
       'expo/use-dom-exports': 'error',
     },
   },
-]);
+])
