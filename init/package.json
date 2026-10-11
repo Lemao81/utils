@@ -1,5 +1,6 @@
 ...
   "scripts": {
+    "prepare": "git config core.hooksPath .githooks",
     "test": "vitest run",
     "typecheck": "tsc --noEmit",
     "bm:check:ci": "biome ci",
