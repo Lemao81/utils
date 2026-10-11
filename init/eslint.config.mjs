@@ -6,7 +6,7 @@ import tseslint from 'typescript-eslint'
 export default defineConfig([
   globalIgnores(['.expo/', 'android/', 'dist/', 'modules/*/android/']),
   {
-    files: ['**/*.ts', '**/*.tsx', '**/*.mts'],
+    files: ['**/*.ts', '**/*.tsx', '**/*.mts', '**/*.cts'],
     languageOptions: { parser: tseslint.parser, parserOptions: { projectService: true } },
     plugins: { '@stylistic': stylistic, '@typescript-eslint': tseslint.plugin, expo },
     rules: {
