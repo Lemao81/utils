@@ -30,7 +30,10 @@
         "useBlockStatements": "error",
         "useConsistentArrowReturn": { "level": "error", "options": { "style": "asNeeded" } },
         "useConsistentTypeDefinitions": { "level": "error", "options": { "style": "type" } },
-        "useFilenamingConvention": { "level": "error", "options": { "filenameCases": ["kebab-case"] } },
+        "useFilenamingConvention": {
+          "level": "error",
+          "options": { "filenameCases": ["kebab-case"] }
+        },
         "noRestrictedImports": {
           "level": "error",
           "options": { "patterns": [{ "group": ["**/index"], "message": "Import the directory." }] }
@@ -58,7 +61,10 @@
       "linter": {
         "rules": {
           "style": {
-            "useFilenamingConvention": { "level": "error", "options": { "filenameCases": ["PascalCase"] } }
+            "useFilenamingConvention": {
+              "level": "error",
+              "options": { "filenameCases": ["PascalCase"] }
+            }
           }
         }
       }
