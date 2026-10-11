@@ -7,7 +7,7 @@
   },
   "formatter": {
     "indentStyle": "space",
-    "lineEnding": "crlf",
+    "lineEnding": "lf",
     "lineWidth": 100
   },
   "css": {
