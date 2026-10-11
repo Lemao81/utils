@@ -12,7 +12,6 @@ This file is shared across projects. Apart from current project descriptions, an
 - If the project uses Biome: whenever you have edited files it checks, run `biome check --write` before handing back to the user.
 - Fix every finding a check reports, whether from your own run or a failed pre-commit hook, in the code; after a hook failure, re-stage and retry the commit. Ask first before a suppression comment, a linter config change, `--no-verify`, a fix that changes behaviour, or an edit to files outside the commit.
 - When a commit prints that a hook `was ignored because it's not set as executable`, run `chmod +x` on that hook, then `git hook run <hook>` to check the commit it skipped, and report both to the user.
-- If the project uses shadcn/ui: never write component code yourself; to add or update components, give the user the `pnpm shadcn add <components>` command (with `--overwrite` for updates, naming any local edits it discards, since formatting makes `--diff` useless) and wait until they have run it. Then format the files and stage them by explicit path. Read-only CLI calls (`docs`, `search`, `view`, `--dry-run`) are fine.
 - Never execute `git commit` on your own without explicit instruction. After explicit instruction, commit directly to main — this is a solo project and does not use feature branches.
 - After executing a commit, stop. Never start the next task or planned commit automatically — wait for the user to say so.
 - After creating a file that belongs in the repository, run `git add` on it right away so it is tracked rather than left untracked.
@@ -23,24 +22,19 @@ This file is shared across projects. Apart from current project descriptions, an
 ## Code Style
 - General:
   - Never add comments, except tool-control directive comments when explicitly instructed — e.g. suppression/ignore/pragma comments for linters, formatters, type-checkers, or static analyzers.
-- C#:
-  - Tests:
-    - Structure tests with the Arrange-Act-Assert pattern, marking each section with an `// Arrange`, `// Act` or `// Assert` comment.
 - package.json:
     - Prefix script names with a short tag for the tool it runs, followed by a colon (`bm:check`, `db:migrate`, `docker:up`). Scripts for the core build toolchain and for tests keep plain names (`start`, `typecheck`, `test:e2e`).
 - Markdown:
     - Never hard-wrap text. Write each paragraph, bullet point or table cell as one line, however long, and leave wrapping to the viewer. Line breaks belong only between separate elements (paragraphs, list items, headings, code blocks).
-- Cypress:
-  - Select elements only via `cy.get('[data-cy=...]')`; add a `data-cy` attribute to every element a test targets.
-  - Keep `it()` titles to a few words naming the main thing, not action→result sentences.
- 
-## TypeScript Code Style
 
-Reference `docs/references/typescript-code-style.md` for detailed TypeScript code style guide.
+## References
 
-## Starting a feature + Issue tracker
-
-Reference `docs/references/feature-start-issue-tracker.md` for details when starting a feature or working on issues.
+- Writing TypeScript → read `docs/references/typescript-code-style.md` first.
+- Writing C# → read `docs/references/csharp-code-style.md` first.
+- Writing Cypress tests → read `docs/references/cypress-tests.md` first.
+- Working with shadcn/ui → read `docs/references/shadcn.md` first.
+- Adding or changing an API endpoint → read `docs/references/api-endpoints.md` first.
+- Starting a feature or working on an issue → read `docs/references/feature-start-issue-tracker.md` first.
 
 ## Agent skills
 
@@ -52,10 +46,3 @@ Before editing CLAUDE.md, AGENTS.md, a skill, or a doc one of them points to, lo
 
 Before committing, load `commit-messages`.
 
-## Workflows
-
-### Creating/Modifying API endpoints
-
-When adding or changing an API endpoint:
-
-1. Add or update its request in the related project's .http file, with a realistic sample body for POST, PUT and PATCH.
