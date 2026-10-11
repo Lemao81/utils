@@ -24,6 +24,21 @@
       "semicolons": "asNeeded"
     }
   },
+  "linter": {
+    "rules": {
+      "style": {
+        "useBlockStatements": "error",
+        "useConsistentTypeDefinitions": { "level": "error", "options": { "style": "type" } },
+        "noRestrictedImports": {
+          "level": "error",
+          "options": { "patterns": [{ "group": ["**/index"], "message": "Import the directory." }] }
+        }
+      },
+      "nursery": {
+        "useConsistentFunctionStyle": { "level": "error", "options": { "style": "declaration" } }
+      }
+    }
+  },
   "overrides": [
     {
       "includes": ["tests/e2e/fixtures.ts"],
