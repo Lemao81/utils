@@ -3,6 +3,8 @@
     "prepare": "git config core.hooksPath .githooks",
     "test": "vitest run",
     "typecheck": "tsc --noEmit",
+    "es:lint": "eslint .",
+    "es:fix": "eslint . --fix",
     "bm:check:ci": "biome ci",
     "bm:check:dev": "biome check",
     "bm:fix": "biome check --write",
