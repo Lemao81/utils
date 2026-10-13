@@ -8,7 +8,9 @@ This file is shared across projects. Apart from current project descriptions, an
 
 ## Agent Instructions
 
-- `node_modules` is installed on the Windows host and shared with this sandbox; that install also fetches the Linux native binaries. Never run `pnpm`, `npx`, `electron`, `electron-forge` or any install command here; call tools via `node_modules/.bin/<tool>`. To change dependencies, edit `package.json` and tell the user to run the install.
+- In this sandbox, tools run from its own Linux `node_modules`, bind-mounted over the repo's shared one. Before the first tool run of a session, check `mountpoint -q node_modules`; when it fails, set the sandbox up per `docs/references/sandbox-node-modules.md` first.
+- Run pnpm here only on the mounted `node_modules`, and install only with `pnpm install --frozen-lockfile`. To change dependencies, edit `package.json` and tell the user to run the install on the host; run the frozen install here too whenever the user reports an install on the host, or `[ pnpm-lock.yaml -nt node_modules/.modules.yaml ]` holds before a tool run.
+- Leave `electron` and `electron-forge` to the host.
 - If the project uses Biome: whenever you have edited files it checks, run `biome check --write` before handing back to the user.
 - Fix every finding a check reports, whether from your own run or a failed pre-commit hook, in the code; after a hook failure, re-stage and retry the commit. Ask first before a suppression comment, a linter config change, `--no-verify`, a fix that changes behaviour, or an edit to files outside the commit.
 - When a commit prints that a hook `was ignored because it's not set as executable`, run `chmod +x` on that hook, then `git hook run <hook>` to check the commit it skipped, and report both to the user.
