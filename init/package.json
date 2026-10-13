@@ -1,4 +1,14 @@
 ...
+  "devEngines": {
+    "runtime": {
+      "name": "node",
+      "version": "x.x.x"
+    },
+    "packageManager": {
+      "name": "pnpm",
+      "version": "x.x.x"
+    }
+  },
   "scripts": {
     "prepare": "git config core.hooksPath .githooks",
     "test": "vitest run",
