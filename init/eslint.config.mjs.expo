@@ -23,6 +23,7 @@ export default defineConfig([
           ],
           next: '*',
         },
+        { blankLine: 'never', prev: 'import', next: 'import' },
       ],
       '@typescript-eslint/no-floating-promises': 'error',
       'expo/no-dynamic-env-var': 'error',
