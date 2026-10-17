@@ -37,7 +37,8 @@ This file is shared across projects. Apart from current project descriptions, an
 - Writing Cypress tests → read `docs/references/cypress-tests.md` first.
 - Working with shadcn/ui → read `docs/references/shadcn.md` first.
 - Adding or changing an API endpoint → read `docs/references/api-endpoints.md` first.
-- Starting a feature or working on an issue → read `docs/references/feature-start-issue-tracker.md` first.
+- Starting a feature or writing its issues and plan → read `docs/references/feature-start-issue-tracker.md` first.
+- Moving on with the plan → read `docs/references/move-on-with-the-plan.md` first.
 
 ## Agent skills
 
