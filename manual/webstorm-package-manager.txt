@@ -1,0 +1,1 @@
+Settings → Languages & Frameworks → JavaScript Runtime → Package manager : set to pnpm
