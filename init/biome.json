@@ -47,6 +47,16 @@
   },
   "overrides": [
     {
+      "includes": ["**/*.d.ts"],
+      "linter": {
+        "rules": {
+          "style": {
+            "useConsistentTypeDefinitions": "off"
+          }
+        }
+      }
+    },
+    {
       "includes": ["tests/e2e/fixtures.ts"],
       "linter": {
         "rules": {
