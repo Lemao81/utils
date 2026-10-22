@@ -4,12 +4,12 @@ A cloud session (`CLAUDE_CODE_REMOTE=true`) runs in a fresh Linux container clon
 
 ## Setup
 
-1. **SessionStart hook.** Check that `.claude/settings.json` registers a `SessionStart` hook that prepares the container. When it is missing, load `session-start-hook` and create it, then tell the user it rides with this session's pull request. The hook:
-    - exits at once unless `CLAUDE_CODE_REMOTE` is `true`, leaving local and sandbox runs to their own setup;
-    - installs the Node and pnpm versions pinned in `devEngines` of `package.json`, Node through nvm, and puts that Node on the `PATH` of every later command;
-    - runs `pnpm install --frozen-lockfile`, with `ELECTRON_SKIP_BINARY_DOWNLOAD=1` when the project depends on `electron`.
+The cloud environment's setup script installs the Node and pnpm versions pinned in `devEngines` of `package.json`, outside the repository.
 
-   Done when, in a fresh shell, `node --version` and `pnpm --version` print the pinned versions and `node_modules/.modules.yaml` exists.
+1. **Check** in a fresh shell that `node --version` and `pnpm --version` print the pinned versions. When they differ, install the pinned versions for this session with nvm and npm, and tell the user the setup script needs updating.
+2. **Install** with `pnpm install --frozen-lockfile`, prefixed with `ELECTRON_SKIP_BINARY_DOWNLOAD=1` when the project depends on `electron`.
+
+Done when the pinned versions print, `node_modules/.modules.yaml` exists, and `git status` shows nothing from the setup.
 
 ## Branch and pull request
 
