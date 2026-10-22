@@ -8,6 +8,7 @@ This file is shared across projects. Apart from current project descriptions, an
 
 ## Agent Instructions
 
+- Treat a question as a request for its answer, capability questions (`can you …?`) included. Answering covers any undoable check that firms up the answer, undone once checked; the action the question is about is what you propose, and it waits for the user's go-ahead.
 - Before the first tool run of a session, prepare the environment it runs in:
     - Cloud session (`CLAUDE_CODE_REMOTE=true`) → read `docs/references/cloud-session.md` first.
     - Local sandbox (`SANDBOX_NAME` set) → tools run from its own Linux `node_modules`, bind-mounted over the repo's shared one. Check `mountpoint -q node_modules`; when it fails, set the sandbox up per `docs/references/sandbox-node-modules.md` first. Run pnpm only on the mounted `node_modules`.
