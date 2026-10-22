@@ -15,4 +15,5 @@ Done when the pinned versions print, `node_modules/.modules.yaml` exists, and `g
 
 - Commit and push to the session branch, on the user's instruction as everywhere else; open a pull request when the user asks for one.
 - Checks that need the host, such as end-to-end tests that launch Electron, stay unrun here: name each one in the hand-back and in the pull request, for the user to run before merging.
+- Merge the pull request when the user asks, with the `rebase` merge method, so each commit lands on `main` as it is, without a merge commit.
 - A merged pull request ends the session's work. Report the merge with the next planned step, and leave that step to a new session, which starts its own branch from the latest `main`.
