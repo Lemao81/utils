@@ -12,6 +12,7 @@ This file is shared across projects. Apart from current project descriptions, an
 - Before the first tool run of a session, prepare the environment it runs in:
     - Cloud session (`CLAUDE_CODE_REMOTE=true`) → read `docs/references/cloud-session.md` first.
     - Local sandbox (`SANDBOX_NAME` set) → tools run from its own Linux `node_modules`, bind-mounted over the repo's shared one. Check `mountpoint -q node_modules`; when it fails, set the sandbox up per `docs/references/sandbox-node-modules.md` first. Run pnpm only on the mounted `node_modules`.
+    - Local sandbox in an Expo project (`expo` in `package.json` dependencies) → check `[ -x "$ANDROID_HOME/cmdline-tools/latest/bin/android" ]`; when it fails, install the Android SDK per `docs/references/sandbox-android-sdk.md` first.
 - In a local sandbox, install only with `pnpm install --frozen-lockfile`. To change dependencies, edit `package.json` and tell the user to run the install on the host; run the frozen install here too whenever the user reports an install on the host, or `[ pnpm-lock.yaml -nt node_modules/.modules.yaml ]` holds before a tool run.
 - When the sandbox firewall blocks a documentation site, stop and list every docs domain the task still needs; resume once the user has unblocked them or says to go without them. A subagent stops the same way and returns the list as its result.
 - Leave `electron` and `electron-forge` to the host.
