@@ -11,3 +11,5 @@ obj/
 /android
 modules/*/android/build/
 ANSWERS.md
+RETRO.md
+.notes.local.txt
