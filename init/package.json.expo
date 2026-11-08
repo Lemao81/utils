@@ -8,5 +8,7 @@
     "ios:start": "expo start --ios",
     "start": "expo start",
     "prebuild:clean": "expo prebuild --clean",
+    "test:e2e": "maestro test .maestro",
+    ...
   },
 ...
