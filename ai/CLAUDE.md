@@ -4,7 +4,7 @@ This file is shared across projects. Apart from current project descriptions, an
 
 ## Tooling
 
-- Use pnpm as frontend package manager (`pnpm-lock.yaml`, `pnpm-workspace.yaml`).
+- Use pnpm as frontend package manager (`pnpm-lock.yaml`, `pnpm-workspace.yaml`), and run project CLIs with `pnpm exec` (`pnpm exec expo export`).
 
 ## Agent Instructions
 
