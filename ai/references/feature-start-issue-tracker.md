@@ -9,5 +9,5 @@ Each stage is committed only when the user says so.
 
 Issues, specs and plans live as local markdown files under `.scratch/<feature>/`; details in `docs/agents/issue-tracker.md`.
 - Issues are sized by feature, never shrunk to fit one commit. Each has acceptance criteria and lists its work as numbered `## Steps`; one step is exactly one commit.
-- `plan.md` has one heading per issue, linking its file, with its steps below as checkboxes (`- [ ] 1.1 Step title`) in execution order. 📦 marks a step that edits `package.json`.
+- `.scratch/<feature>/plan.md` has one `## [NN Issue title](issues/NN-slug.md)` heading per issue, with its steps below as checkboxes (`- [ ] 1.1 Step title`) in execution order. 📦 marks a step that edits `package.json`. In an Expo project, 🔧 marks one that changes native config (`app.json` plugins or permissions, `modules/`).
 - Decisions that must wait until work starts go under `## Open decisions (ask the user before starting)`.
