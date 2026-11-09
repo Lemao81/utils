@@ -13,3 +13,4 @@ modules/*/android/build/
 ANSWERS.md
 RETRO.md
 .notes.local.txt
+/maestro-output/
