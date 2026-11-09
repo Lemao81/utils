@@ -8,7 +8,7 @@
     "ios:start": "expo start --ios",
     "start": "expo start",
     "prebuild:clean": "expo prebuild --clean",
-    "test:e2e": "maestro test .maestro",
+    "test:e2e": "node -e \"require('fs').rmSync('maestro-output',{recursive:true,force:true})\" && maestro test .maestro --debug-output maestro-output --flatten-debug-output",
     ...
   },
 ...
