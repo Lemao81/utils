@@ -1,6 +1,6 @@
 # Maestro E2E tests
 
-Flows live in `.maestro/`: one flow per top-level file, shared steps in `.maestro/subflows/`. The sandbox has no device, so the user runs them on the Windows host, with Metro served by `pnpm android:start:usb`.
+Flows live in `.maestro/`: one flow per top-level file, shared steps in `.maestro/subflows/`. The sandbox has no device, so the user runs them on the Windows host, with Metro served by `pnpm android:start:dev`.
 
 ## Handing a run to the user
 
