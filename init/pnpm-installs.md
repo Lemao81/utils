@@ -10,4 +10,4 @@ pnpm dlx skills@latest add mattpocock/skills -s ask-matt -s domain-modeling -s g
 pnpm add -D -E @biomejs/biome @stylistic/eslint-plugin eslint typescript-eslint vitest
 
 #### Expo
-pnpm add -D -E @biomejs/biome @stylistic/eslint-plugin eslint eslint-plugin-expo typescript-eslint vitest
+pnpm add -D -E @biomejs/biome @stylistic/eslint-plugin eslint eslint-plugin-expo typescript-eslint vitest npm-run-all2
