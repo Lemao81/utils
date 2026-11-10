@@ -11,6 +11,7 @@ obj/
 /android
 modules/*/android/build/
 ANSWERS.md
+IDEAS.md
 RETRO.md
 .notes.local.txt
 /maestro-output/
