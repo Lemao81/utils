@@ -33,7 +33,7 @@ The tool versions come from `devEngines` in `package.json`: `runtime.version` fo
 
 2. **pnpm.** `npm install -g pnpm@<packageManager.version>`. Done when `pnpm --version` prints the pinned version.
 
-3. **Mount script.** Create `~/bin/mount-sandbox-node-modules.sh`. It mounts only once a finished install is waiting (pnpm writes `.modules.yaml` last), so the worst case is the slow shared `node_modules`, never an empty one:
+3. **Mount script.** The image may ship without `mount`; when `command -v mount` fails, run `sudo apt-get install -y mount`. Then create `~/bin/mount-sandbox-node-modules.sh`. It mounts only once a finished install is waiting (pnpm writes `.modules.yaml` last), so the worst case is the slow shared `node_modules`, never an empty one:
 
    ```sh
    #!/bin/sh
