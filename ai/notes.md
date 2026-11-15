@@ -16,7 +16,7 @@ writing-for-agents
 
 #### Workflow
 /setup-matt-pockock-skills  
-/grill-with-docs <project description>  
+/grill-with-docs `<project/feature description>`  
 /to-spec  
 /to-tickets  
 /clear  
