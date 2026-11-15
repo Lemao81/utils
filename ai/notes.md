@@ -14,8 +14,10 @@ to-spec
 to-tickets  
 writing-for-agents  
 
-#### Do
+#### Workflow
 /setup-matt-pockock-skills  
 /grill-with-docs <project description>  
 /to-spec  
 /to-tickets
+/clear
+moveon
