@@ -18,6 +18,6 @@ writing-for-agents
 /setup-matt-pockock-skills  
 /grill-with-docs <project description>  
 /to-spec  
-/to-tickets
-/clear
-moveon
+/to-tickets  
+/clear  
+moveon  
