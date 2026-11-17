@@ -42,6 +42,7 @@ This file is shared across projects. Apart from current project descriptions, an
 - Writing TypeScript → read `docs/references/typescript-code-style.md` first.
 - Writing C# → read `docs/references/csharp-code-style.md` first.
 - Writing Cypress tests → read `docs/references/cypress-tests.md` first.
+- Writing Playwright tests → read `docs/references/playwright-tests.md` first.
 - Running Maestro E2E flows or diagnosing a failed run → read `docs/references/maestro-e2e.md` first.
 - Working with shadcn/ui → read `docs/references/shadcn.md` first.
 - Adding or changing an API endpoint → read `docs/references/api-endpoints.md` first.
