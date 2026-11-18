@@ -65,6 +65,9 @@
         "rules": {
           "correctness": {
             "noEmptyPattern": "off"
+          },
+          "suspicious": {
+            "noConfusingVoidType": "off"
           }
         }
       }
