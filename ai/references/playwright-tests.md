@@ -1,6 +1,6 @@
 # Playwright Tests
 
-- Put specs in `tests/e2e/`, one file per app area named after it (`checkout.spec.ts`), beside the suite's global setup and its test fixtures in `tests/e2e/fixtures.ts`; test code outside `src/` lives under `tests/`, one folder per suite.
+- Put specs in `tests/e2e/specs/`, one file per app area named after it (`checkout.spec.ts`); the suite's global setup and its test fixtures in `tests/e2e/fixtures.ts` sit one level up. Test code outside `src/` lives under `tests/`, one folder per suite.
 - Give the suite an environment of its own: global setup starts the services the app needs and a dev server on a dedicated port, teardown removes them, and the `test:e2e` script runs the whole cycle. A run leaves the developer's dev data and dev server untouched.
 - Locate elements by role or label (`getByRole`, `getByLabel`), and plain content by its visible text. When an element has no accessible name, add a `data-testid` to the production component and use `getByTestId`; that is the only production change a test may bring.
 - Keep `test()` titles to a few words naming the main thing, not action→result sentences.
