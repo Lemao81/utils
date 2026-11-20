@@ -5,6 +5,7 @@ This file is shared across projects. Apart from current project descriptions, an
 ## Tooling
 
 - Use pnpm as frontend package manager (`pnpm-lock.yaml`, `pnpm-workspace.yaml`), and run project CLIs with `pnpm exec` (`pnpm exec expo export`).
+- When adding or bumping a package, pick its newest version published longer ago than `minimumReleaseAge` in `pnpm-workspace.yaml` (dates from `pnpm view <package> time`).
 
 ## Agent Instructions
 
