@@ -19,3 +19,4 @@ RETRO.md
 /playwright-report/
 /blob-report/
 /tests/e2e/.auth/
+.DS_Store
